@@ -17,8 +17,7 @@
 //Path to a program.
 CCACHE_PROGRAM:FILEPATH=CCACHE_PROGRAM-NOTFOUND
 
-//Debug
-CMAKE_BUILD_TYPE:STRING=
+CMAKE_BUILD_TYPE:STRING=Release
 
 //Semicolon separated list of supported configuration types, only
 // supports Debug, Release, MinSizeRel, and RelWithDebInfo, anything
@@ -62,8 +61,6 @@ CMAKE_SKIP_INSTALL_RPATH:BOOL=OFF
 //If set, runtime paths are not added when using shared libraries.
 CMAKE_SKIP_RPATH:BOOL=OFF
 
-CMAKE_SYSTEM_VERSION:STRING=10.0.17763.0
-
 //If this value is on, makefiles will be generated without the
 // .SILENT directive, and all commands will be echoed to the console
 // during the make.  This is useful for debugging only. With Visual
@@ -91,7 +88,7 @@ ENABLE_BV16:BOOL=ON
 ENABLE_CODEC2:BOOL=OFF
 
 //Enable CSharp wrapper: Build the C# wrapper from Liblinphone.
-ENABLE_CSHARP_WRAPPER:BOOL=OFF
+ENABLE_CSHARP_WRAPPER:BOOL=ON
 
 //Enable CXX wrapper: Build the C++ wrapper for Liblinphone.
 ENABLE_CXX_WRAPPER:BOOL=ON
@@ -101,10 +98,10 @@ ENABLE_DB_STORAGE:BOOL=OFF
 
 //Enable Debug logs: Enable debug level logs in libinphone and
 // mediastreamer2.
-ENABLE_DEBUG_LOGS:BOOL=ON
+ENABLE_DEBUG_LOGS:BOOL=OFF
 
 //Enable Doc: Enable documentation generation with Doxygen
-ENABLE_DOC:BOOL=OFF
+ENABLE_DOC:BOOL=ON
 
 //Enable G726: G.726 audio encoding/decoding support.
 ENABLE_G726:BOOL=OFF
@@ -157,7 +154,7 @@ ENABLE_MBEDTLS:BOOL=ON
 ENABLE_MDNS:BOOL=OFF
 
 //Enable MKV: MKV playing and recording support.
-ENABLE_MKV:BOOL=OFF
+ENABLE_MKV:BOOL=ON
 
 //Enable NLS: Enable internationalization of Linphone and Liblinphone.
 ENABLE_NLS:BOOL=OFF
@@ -259,13 +256,13 @@ LINPHONESDK_DOXYGEN_PROGRAM:FILEPATH=C:/Program Files/doxygen/bin/doxygen.exe
 //Platform to build
 LINPHONESDK_PLATFORM:STRING=Desktop
 
-LINPHONESDK_VERSION:STRING=4.5.0-beta.18+4888b6c
+LINPHONESDK_VERSION:STRING=4.5.0-beta.20+4906368
 
 //URL of the repository where the Windows SDK zip files are located
 LINPHONESDK_WINDOWS_BASE_URL:STRING=https://www.linphone.org/releases/windows/
 
 //Path to a program.
-PYTHON_EXECUTABLE:FILEPATH=C:/Python37-x64/python.exe
+PYTHON_EXECUTABLE:FILEPATH=C:/Python39/python.exe
 
 //Value Computed by CMake
 linphone-sdk_BINARY_DIR:STATIC=C:/Users/Mircea/Development/Projects/linphone-sdk/build
@@ -327,7 +324,7 @@ ENABLE_CAMERA2:INTERNAL=OFF
 // video scaling, H264 decoding...
 ENABLE_FFMPEG:INTERNAL=OFF
 //Enable LibYUV support
-ENABLE_LIBYUV:INTERNAL=ON
+ENABLE_LIBYUV:INTERNAL=OFF
 //H.264 video encoding/decoding support with the openh264 library
 // (require license).
 ENABLE_OPENH264:INTERNAL=OFF
@@ -336,7 +333,7 @@ ENABLE_VPX:INTERNAL=OFF
 //ZRTP media encryption support.
 ENABLE_ZRTP:INTERNAL=OFF
 //Details about finding PythonInterp
-FIND_PACKAGE_MESSAGE_DETAILS_PythonInterp:INTERNAL=[C:/Python37-x64/python.exe][v3.7.9()]
+FIND_PACKAGE_MESSAGE_DETAILS_PythonInterp:INTERNAL=[C:/Python39/python.exe][v3.9.1()]
 //ADVANCED property for variable: LINPHONESDK_DOXYGEN_PROGRAM
 LINPHONESDK_DOXYGEN_PROGRAM-ADVANCED:INTERNAL=1
 //STRINGS property for variable: LINPHONESDK_PLATFORM
