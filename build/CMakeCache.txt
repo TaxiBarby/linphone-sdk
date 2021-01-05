@@ -17,12 +17,12 @@
 //Path to a program.
 CCACHE_PROGRAM:FILEPATH=CCACHE_PROGRAM-NOTFOUND
 
-CMAKE_BUILD_TYPE:STRING=Release
+CMAKE_BUILD_TYPE:STRING=RelWithDebInfo
 
 //Semicolon separated list of supported configuration types, only
 // supports Debug, Release, MinSizeRel, and RelWithDebInfo, anything
 // else will be ignored.
-CMAKE_CONFIGURATION_TYPES:STRING=Debug;Release;MinSizeRel;RelWithDebInfo
+CMAKE_CONFIGURATION_TYPES:STRING=RelWithDebInfo
 
 //Specify verbosity of installation script code
 CMAKE_INSTALL_MESSAGE:STRING=LAZY
@@ -256,7 +256,7 @@ LINPHONESDK_DOXYGEN_PROGRAM:FILEPATH=C:/Program Files/doxygen/bin/doxygen.exe
 //Platform to build
 LINPHONESDK_PLATFORM:STRING=Desktop
 
-LINPHONESDK_VERSION:STRING=4.5.0-beta.20+4906368
+LINPHONESDK_VERSION:STRING=4.5.0-beta.21+3bde73b
 
 //URL of the repository where the Windows SDK zip files are located
 LINPHONESDK_WINDOWS_BASE_URL:STRING=https://www.linphone.org/releases/windows/
